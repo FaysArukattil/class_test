@@ -4,10 +4,12 @@
 void main()
 {
 Map q1={"course":"Dart Basics","duration":30,"isFree":true};
-print("Key: ${q1['']} , Value: ${q1['course']} ");
-print("Key: ${q1[""]} , Value: ${q1['duration']} ");
-print("Key: ${q1[""]} , Value: ${q1['isFree']} ");
+
+for (var key in q1.keys) 
+{
+    print("Key: $key , Value: ${q1[key]}");
 }
 
+}
 
 
