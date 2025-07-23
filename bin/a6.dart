@@ -2,17 +2,20 @@ import 'dart:io';
 
 void main()
 {
- int i,j;
-  for (i = 1; i <= 4; i++) 
+ int k=0;
+  for (int i = 1; i <= 4; i++) 
   {
     
-    for (j = 1; j <= 4; j++) 
+    for (int j = i; j <= 4; j++) 
     {
-      
-      stdout.write(" * ");  
-    }  
-   
-
-    print(" ");
+      k++;
+      stdout.write(" $k ");
+    }
+    print("");
+    for (var z = 0; z < i; z++) 
+    {
+      stdout.write("   "); 
+    }
+    
   }
 }
