@@ -7,20 +7,23 @@ int findLargest(list)
 int greatest=0;
 for (var element in list) 
 {
-  element>greatest ? greatest=element : greatest ;
+  int e1=int.parse(element);
+  e1 > greatest ? greatest=e1 : e1 ;
 }
 
-return greatest;
+return greatest ;
 }
 
 
 
-List <int>list=[];
-
+List list=[];
 stdout.write("Input:");
-int  num=int.parse(stdin.readLineSync()!);
+String s1=(stdin.readLineSync()!);
+list=s1.split(",");
+print("Output: ${findLargest(list)}");
 
-list[0]=int.parse(stdin.readLineSync()!);  
+
+  
 
 
 
